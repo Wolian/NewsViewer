@@ -1,9 +1,11 @@
-import { GnNews, PopupButton, ViewButton, Wrapper } from "./styled";
+import { Buttons, NewsViewer, PopupButton, ViewButton, Wrapper } from "./styled";
 
 export const Header = () => (
   <Wrapper>
-    <GnNews>gnNews</GnNews>
-    <ViewButton>Zmiana widoku newsów</ViewButton>
-    <PopupButton>Popup</PopupButton>
+    <NewsViewer>News Viewer</NewsViewer>
+    <Buttons>
+      <ViewButton>Zmiana widoku newsów</ViewButton>
+      <PopupButton>Popup</PopupButton>
+    </Buttons>
   </Wrapper>
 );
