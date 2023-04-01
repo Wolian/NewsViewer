@@ -1,8 +1,8 @@
-import { Wrapper } from "./styled";
+import { Text, Wrapper } from "./styled";
 
 export const Footer = () => (
     <Wrapper>
-        <div>Aktualna godzina</div>
-        <div>Liczba artykułów: 4 </div>
+        <Text>Aktualna godzina</Text>
+        <Text>Liczba artykułów: 4 </Text>
     </Wrapper>
 );
