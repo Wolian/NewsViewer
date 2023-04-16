@@ -5,10 +5,12 @@ import { MainContent } from "../../features/NewsViewer/MainContent";
 import { SideMenu } from "../../features/NewsViewer/SideMenu";
 import { GlobalStyle } from "./GlobalStyle";
 import { theme } from "./theme";
+import { Normalize } from "styled-normalize";
 
 export const App = () => {
   return (
     <ThemeProvider theme={theme}>
+      <Normalize />
       <GlobalStyle />
       <Header />
       <main>
