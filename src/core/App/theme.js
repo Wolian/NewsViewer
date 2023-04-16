@@ -4,6 +4,7 @@ export const theme = {
         BrightTurquoise: "#1FD1F9",
         ElectricViolet: "#B621FE",
         White: "#FFFFFF", 
+        whiteLilac: "#FBFBFE",
     },
 
     breakpoints: {
