@@ -6,11 +6,11 @@ export const Wrapper = styled.header`
   justify-content: center;
   align-items: center;
   padding: 60px;
-  background-color: ${({ theme }) => theme.colors.BrightTurquoise};
+  background-color: ${({ theme }) => theme.colors.brightTurquoise};
   background-image: linear-gradient(
     315deg,
-    ${({ theme }) => theme.colors.BrightTurquoise} 0%,
-    ${({ theme }) => theme.colors.ElectricViolet} 75%
+    ${({ theme }) => theme.colors.brightTurquoise} 0%,
+    ${({ theme }) => theme.colors.electricViolet} 75%
   );
 `;
 
@@ -18,7 +18,7 @@ export const NewsViewer = styled.h1`
   font-size: 40px;
   margin-bottom: 20px;
   line-height: 55px;
-  color: ${({ theme }) => theme.colors.White};
+  color: ${({ theme }) => theme.colors.white};
 `;
 
 export const Buttons = styled.div`
