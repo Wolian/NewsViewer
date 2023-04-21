@@ -1,10 +1,11 @@
 export const theme = {
     colors: {
-        Gallery: "#EEEEEE", 
-        BrightTurquoise: "#1FD1F9",
-        ElectricViolet: "#B621FE",
-        White: "#FFFFFF", 
+        gallery: "#EEEEEE", 
+        brightTurquoise: "#1FD1F9",
+        electricViolet: "#B621FE",
+        white: "#FFFFFF", 
         whiteLilac: "#FBFBFE",
+        black: "#000000"
     },
 
     breakpoints: {
