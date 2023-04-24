@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Item, Link, News, Wrapper } from "./styled";
 import axios from "axios";
-import { APIKey } from "../../../core/API";
+import { APIKey } from "../API";
 
 export const MainContent = () => {
   const [news, setNews] = useState([]);
