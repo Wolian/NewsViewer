@@ -20,11 +20,12 @@ export const MainContent = () => {
   return (
     <Wrapper>
       <News>
-        {news.map(({ id, url, title, content }) => (
+        {news.map(({ id, url, title, content, publishedAt }) => (
           <Item key={id}>
             <Link href={url} target="_blank" rel="noreferrer">
               <h2>{title}</h2>
               <p>{content}</p>
+              <side>{publishedAt}</side>
             </Link>
           </Item>
         ))}
