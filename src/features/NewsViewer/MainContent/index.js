@@ -1,20 +1,14 @@
 import { useEffect, useState } from "react";
 import { Item, Link, News, Wrapper } from "./styled";
-import axios from "axios";
-import { APIKey } from "../API";
+import { NewsViewerAPI } from "../NewsViewerAPI";
 
 export const MainContent = () => {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`https://newsapi.org/v2/top-headlines?country=pl&apiKey=${APIKey}`)
-      .then((response) => {
-        setNews(response.data.articles);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    NewsViewerAPI().then((data) => {
+      setNews(data);
+    });
   }, []);
 
   return (
@@ -25,7 +19,7 @@ export const MainContent = () => {
             <Link href={url} target="_blank" rel="noreferrer">
               <h2>{title}</h2>
               <p>{content}</p>
-              <side>{publishedAt}</side>
+              <div>{publishedAt}</div>
             </Link>
           </Item>
         ))}
